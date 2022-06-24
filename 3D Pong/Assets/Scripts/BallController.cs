@@ -16,7 +16,7 @@ public class BallController : MonoBehaviour
         BallLaunch();
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (rig.velocity.magnitude < minimumSpeed)
         {
@@ -26,8 +26,8 @@ public class BallController : MonoBehaviour
 
     public void BallLaunch()
     {
-        float arahX = Random.Range(1f, 1.3f);
-        float arahZ = Random.Range(1f, 1.3f);
+        float arahX = Random.Range(0.7f, 1.3f);
+        float arahZ = Random.Range(0.7f, 1.3f);
         switch (positionIndex)
         {
             case 0:

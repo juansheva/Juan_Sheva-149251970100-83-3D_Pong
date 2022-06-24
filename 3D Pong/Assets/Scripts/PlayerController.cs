@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         normalSpeed = speed;
         normalScale = transform.localScale;
         rig = GetComponent<Rigidbody>();
+        pointForLose = gameplayManager.pointForLose;
     }
 
     private void Update()

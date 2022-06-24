@@ -16,7 +16,7 @@ public class BallSpawner : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        GenerateBall(Random.Range(0, 4));
+        GenerateBall(Random.Range(0, spawnerPosition.Count));
     }
 
     // Update is called once per frame
@@ -26,7 +26,7 @@ public class BallSpawner : MonoBehaviour
 
         if (timer > spawnInterval)
         {
-            GenerateBall(Random.Range(0, 4));
+            GenerateBall(Random.Range(0, spawnerPosition.Count));
             timer -= spawnInterval;
         }
     }

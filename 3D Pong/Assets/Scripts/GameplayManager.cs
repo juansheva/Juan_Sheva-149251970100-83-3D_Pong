@@ -10,6 +10,7 @@ public class GameplayManager : MonoBehaviour
 
     public bool gameIsFinish;
     public int playerLose;
+    public int pointForLose;
 
     // Start is called before the first frame update
     private void Awake()
